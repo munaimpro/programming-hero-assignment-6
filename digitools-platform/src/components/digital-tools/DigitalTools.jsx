@@ -1,9 +1,16 @@
-import React, {use} from 'react';
+import React, {use, useState} from 'react';
 import DigitalToolsProducts from './DigitalToolsProducts';
 import DigitalToolsCartProducts from './DigitalToolsCartProducts';
 
 const DigitalTools = ({ productPromise }) => {
+
     const products = use(productPromise);
+
+    const [selectedButton, setSelectedButton] = useState('products');
+
+    const [cartProducts, setCartProducts] = useState([]);
+
+    const [total, setTotal] = useState(0);
 
     return (
         <div className="container mx-auto py-30">
@@ -22,15 +29,15 @@ const DigitalTools = ({ productPromise }) => {
                 {/* Tabs */}
                 <div className="flex justify-center">
                     <div className="flex items-center gap-2 p-1 bg-white rounded-full border border-[#F6F6F6]">
-                        <button className="btn btn-primary shadow">Products</button>
-                        <button className="btn border-0 bg-transparent shadow-none px-8 py-3 rounded-full text-[#25065D] font-medium">Cart (2)</button>
+                        <button onClick={() => { setSelectedButton('products') }} className={`btn ${selectedButton == 'products' ? 'btn-primary shadow' : 'border-0 bg-transparent shadow-none px-8 py-3 rounded-full text-[#25065D] font-medium'}`}>Products</button>
+                        <button onClick={() => { setSelectedButton('cart') }} className={`btn ${selectedButton == 'cart' ? 'btn-primary shadow' : 'border-0 bg-transparent shadow-none px-8 py-3 rounded-full text-[#25065D] font-medium'}`}>Cart ({cartProducts.length})</button>
                     </div>
                 </div>
             </div>
 
             {/* Section content */}
-            <DigitalToolsProducts products={products}></DigitalToolsProducts>
-            <DigitalToolsCartProducts></DigitalToolsCartProducts>
+            {selectedButton == "products" ? <DigitalToolsProducts products={products} cartProducts={cartProducts} setCartProducts={setCartProducts} total={total} setTotal={setTotal}></DigitalToolsProducts> : <DigitalToolsCartProducts cartProducts={cartProducts} setCartProducts={setCartProducts} total={total} setTotal={setTotal}></DigitalToolsCartProducts>}
+            
         </div>
     );
 };
