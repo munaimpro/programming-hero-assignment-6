@@ -1,7 +1,7 @@
 import React from 'react';
 import shoppingCart from '../../assets/products/shopping-cart.png'
 
-const NavBar = () => {
+const NavBar = ({ cartProducts }) => {
     return (
         <div className="navbar bg-base-100 shadow-sm">
             <div className='container flex mx-auto'>
@@ -38,9 +38,19 @@ const NavBar = () => {
                 </div>
 
                 <div className="navbar-end flex gap-4">
-                    <a href='#'>
+                    <div className="indicator">
+                        {
+                            cartProducts.length > 0 &&
+                            <span className="indicator-item indicator-start badge -top-2.5 -left-2.75 bg-red-500 font-semibold text-base-100 rounded-full">{cartProducts.length}</span>
+                        }
+                        
+                        <a href='#'>
+                            <img src={shoppingCart} alt="cart" />
+                        </a>
+                    </div>
+                    {/* <a href='#'>
                         <img src={shoppingCart} alt="cart" />
-                    </a>
+                    </a> */}
                     <a href='#' className='font-semibold text-[16px] text-[#101727]'>Login</a>
                     <a className="btn btn-primary">Get Started</a>
                 </div>

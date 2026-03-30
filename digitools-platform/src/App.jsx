@@ -1,4 +1,4 @@
-import { Suspense, useState } from 'react'
+import {useState, Suspense } from 'react'
 import './App.css'
 import NavBar from './components/navbar/NavBar'
 import Banner from './components/banner/Banner'
@@ -8,6 +8,7 @@ import GetStarted from './components/get-started/GetStarted'
 import Pricing from './components/pricing/Pricing'
 import Footer from './components/footer/Footer'
 import DigitalToolsCartProducts from './components/digital-tools/DigitalToolsCartProducts'
+import { ToastContainer } from 'react-toastify'
 
 const fetchProducts = async () => {
   const response = await fetch('/products.json');
@@ -18,17 +19,22 @@ function App() {
   
   const productPromise = fetchProducts();
 
+  const [cartProducts, setCartProducts] = useState([]);
+
   return (
     <>
-      <NavBar></NavBar>
+      <NavBar cartProducts={cartProducts}></NavBar>
       <Banner></Banner>
       <Stats></Stats>
       <Suspense fallback={<span className="loading loading-spinner loading-xl"></span>}>
-        <DigitalTools productPromise={productPromise}></DigitalTools>
+        <DigitalTools productPromise={productPromise} cartProducts={cartProducts} setCartProducts={setCartProducts}></DigitalTools>
       </Suspense>
       <GetStarted></GetStarted>
       <Pricing></Pricing>
       <Footer></Footer>
+
+      {/* React Toastify */}
+      <ToastContainer></ToastContainer>
     </>
   )
 }

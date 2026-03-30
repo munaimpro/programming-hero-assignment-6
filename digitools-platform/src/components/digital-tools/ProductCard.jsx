@@ -1,4 +1,5 @@
 import React from 'react';
+import { toast } from 'react-toastify';
 
 const ProductCard = ({ product, cartProducts, setCartProducts, total, setTotal }) => {
 
@@ -6,6 +7,7 @@ const ProductCard = ({ product, cartProducts, setCartProducts, total, setTotal }
 
     const selectProduct = () => {
         setCartProducts([...cartProducts, product])
+        toast(`${product.name} added to cart`)
         setTotal(total + product.price)
     }
     

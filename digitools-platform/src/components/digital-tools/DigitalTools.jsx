@@ -2,13 +2,11 @@ import React, {use, useState} from 'react';
 import DigitalToolsProducts from './DigitalToolsProducts';
 import DigitalToolsCartProducts from './DigitalToolsCartProducts';
 
-const DigitalTools = ({ productPromise }) => {
+const DigitalTools = ({ productPromise, cartProducts, setCartProducts }) => {
 
     const products = use(productPromise);
 
     const [selectedButton, setSelectedButton] = useState('products');
-
-    const [cartProducts, setCartProducts] = useState([]);
 
     const [total, setTotal] = useState(0);
 
