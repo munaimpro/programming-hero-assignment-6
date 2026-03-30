@@ -5,6 +5,7 @@ import Banner from './components/banner/Banner'
 import Stats from './components/stats/Stats'
 import DigitalTools from './components/digital-tools/DigitalTools'
 import GetStarted from './components/get-started/GetStarted'
+import Pricing from './components/pricing/Pricing'
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
       <Stats></Stats>
       <DigitalTools></DigitalTools>
       <GetStarted></GetStarted>
+      <Pricing></Pricing>
     </>
   )
 }
