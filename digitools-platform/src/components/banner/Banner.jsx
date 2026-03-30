@@ -11,7 +11,7 @@ const Banner = () => {
                     className="max-w-full rounded-lg shadow-2xl"
                 />
                 <div>
-                    <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-[#E1E7FF] text-[#4F39F6] text-sm font-semibold w-fit">
+                    <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-base-100 text-[#4F39F6] text-sm font-semibold w-fit">
                         <div className="relative flex items-center justify-center w-4 h-4">
                             {/* Outer glow */}
                             <span className="absolute w-5 h-5 rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] opacity-30"/>
