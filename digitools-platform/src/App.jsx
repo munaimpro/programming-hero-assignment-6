@@ -7,6 +7,7 @@ import DigitalTools from './components/digital-tools/DigitalTools'
 import GetStarted from './components/get-started/GetStarted'
 import Pricing from './components/pricing/Pricing'
 import Footer from './components/footer/Footer'
+import DigitalToolsCartProducts from './components/digital-tools/DigitalToolsCartProducts'
 
 function App() {
 

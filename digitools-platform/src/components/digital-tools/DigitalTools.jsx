@@ -1,5 +1,6 @@
 import React from 'react';
 import DigitalToolsProducts from './DigitalToolsProducts';
+import DigitalToolsCartProducts from './DigitalToolsCartProducts';
 
 const DigitalTools = () => {
     return (
@@ -27,6 +28,7 @@ const DigitalTools = () => {
 
             {/* Section content */}
             <DigitalToolsProducts></DigitalToolsProducts>
+            <DigitalToolsCartProducts></DigitalToolsCartProducts>
         </div>
     );
 };
