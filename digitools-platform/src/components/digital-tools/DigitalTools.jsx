@@ -5,7 +5,7 @@ const DigitalTools = () => {
     return (
         <div className="container mx-auto py-30">
             {/* Section heading */}
-            <div className="text-center bg-base-100">
+            <div className="text-center bg-base-100 mb-10">
                 {/* Heading */}
                 <h2 className="text-[#101727] font-extrabold text-5xl mb-4">
                     Premium Digital Tools
