@@ -21,7 +21,7 @@ const NavBar = () => {
                         </ul>
                     </div>
                     <a className="text-3xl">
-                        <span class="bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent font-extrabold">
+                        <span className="bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent font-extrabold">
                             DigiTools
                         </span>
                     </a>

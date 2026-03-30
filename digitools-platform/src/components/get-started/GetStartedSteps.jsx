@@ -20,7 +20,7 @@ const GetStartedSteps = () => {
                     <div className="w-28 h-28 bg-[#F5EFFF] rounded-full flex items-center justify-center">
                         <img src={userIcon} alt="" />
                     </div>
-                    <h2 class="text-2xl font-bold text-[#101727]">Create Account</h2>
+                    <h2 className="text-2xl font-bold text-[#101727]">Create Account</h2>
                     <p className="text-[#627382] text-base leading-relaxed">
                         Sign up for free in seconds. No credit card required to get started.
                     </p>
@@ -37,7 +37,7 @@ const GetStartedSteps = () => {
                     <div className="w-28 h-28 bg-[#F5EFFF] rounded-full flex items-center justify-center mb-8">
                         <img src={packageIcon} alt="" />
                     </div>
-                    <h2 class="text-2xl font-bold text-[#101727]">Choose Products</h2>
+                    <h2 className="text-2xl font-bold text-[#101727]">Choose Products</h2>
                     <p className="text-[#627382] text-base leading-relaxed">
                         Browse our catalog and select the toolsthat fit your needs.
                     </p>
@@ -54,7 +54,7 @@ const GetStartedSteps = () => {
                     <div className="w-28 h-28 bg-[#F5EFFF] rounded-full flex items-center justify-center mb-8">
                         <img src={rocketIcon} alt="" />
                     </div>
-                    <h2 class="text-2xl font-bold text-[#101727]">Start Creating</h2>
+                    <h2 className="text-2xl font-bold text-[#101727]">Start Creating</h2>
                     <p className="text-[#627382] text-base leading-relaxed">
                         Download and start using your premium tools immediately.
                     </p>

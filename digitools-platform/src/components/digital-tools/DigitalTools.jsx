@@ -1,8 +1,10 @@
-import React from 'react';
+import React, {use} from 'react';
 import DigitalToolsProducts from './DigitalToolsProducts';
 import DigitalToolsCartProducts from './DigitalToolsCartProducts';
 
-const DigitalTools = () => {
+const DigitalTools = ({ productPromise }) => {
+    const products = use(productPromise);
+
     return (
         <div className="container mx-auto py-30">
             {/* Section heading */}
@@ -27,7 +29,7 @@ const DigitalTools = () => {
             </div>
 
             {/* Section content */}
-            <DigitalToolsProducts></DigitalToolsProducts>
+            <DigitalToolsProducts products={products}></DigitalToolsProducts>
             <DigitalToolsCartProducts></DigitalToolsCartProducts>
         </div>
     );
