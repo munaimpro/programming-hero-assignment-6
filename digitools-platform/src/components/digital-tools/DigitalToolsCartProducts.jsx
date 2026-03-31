@@ -8,7 +8,7 @@ const DigitalToolsCartProducts = ({ cartProducts, setCartProducts, total, setTot
         const filteredProducts = cartProducts.filter(filteredProduct => filteredProduct.id !== cartProduct.id);
         setCartProducts(filteredProducts);
         setTotal(total - cartProduct.price);
-        toast.danger("Product removed");
+        toast.warn("Product removed")
     }
 
     // Function to handle checkout
@@ -27,9 +27,9 @@ const DigitalToolsCartProducts = ({ cartProducts, setCartProducts, total, setTot
 
                         <div className="cart-items">
                             {
-                                cartProducts.map(cartProduct => {
+                                cartProducts.map((cartProduct, key) => {
                                     return (
-                                        <div className='flex rounded-2xl p-5 gap-4 bg-[#F9FAFC] mb-4'>
+                                        <div key={key} className='flex rounded-2xl p-5 gap-4 bg-[#F9FAFC] mb-4'>
                                             <div className="w-16 h-16 bg-base-100 rounded-full flex items-center justify-center border border-[#F2F2F2]">
                                                 <img alt="icon" src={cartProduct.icon} />
                                             </div>

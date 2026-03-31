@@ -23,7 +23,7 @@ const Banner = () => {
                         <span>New: AI-Powered Tools Available</span>
                     </div>
 
-                    <h2 class="py-6 font-extrabold text-6xl lg:text-7xl text-[#101727] mb-4"> Supercharge Your Digital Workflow</h2>
+                    <h2 className="py-6 font-extrabold text-6xl lg:text-7xl text-[#101727] mb-4"> Supercharge Your Digital Workflow</h2>
                     <p className='text-[#627382] text-lg mb-8'>Access premium AI tools, design assets, templates, and productivity software—all in one place. Start creating faster today. Explore Products</p>
                     <div className='flex gap-3'>
                         <button className="btn btn-primary">Explore Products</button>
