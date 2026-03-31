@@ -72,11 +72,3 @@ Users can easily explore and purchase digital tools.
 * User authentication system
 * Payment gateway integration
 * Product search and filtering
-
----
-
-# 👨‍💻 Author
-
-**Munaim Khan**
-MSc in Computer Science & Engineering
-Aspiring Full Stack Developer
