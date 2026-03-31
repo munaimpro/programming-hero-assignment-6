@@ -5,6 +5,7 @@ const ProductCard = ({ product, cartProducts, setCartProducts, total, setTotal }
 
     const { name, description, price, period, tag, tagType, icon, features } = product;
 
+    // Select product functionality
     const selectProduct = () => {
         setCartProducts([...cartProducts, product])
         toast(`${product.name} added to cart`)
@@ -50,7 +51,7 @@ const ProductCard = ({ product, cartProducts, setCartProducts, total, setTotal }
                 {
                     features.map((feature, key) => {
                         return (
-                            <li className="flex items-center gap-3 text-slate-600 text-lg">
+                            <li key={key} className="flex items-center gap-3 text-slate-600 text-lg">
                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-emerald-500" viewBox="0 0 20 20" fill="currentColor">
                                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                                 </svg>
@@ -62,7 +63,7 @@ const ProductCard = ({ product, cartProducts, setCartProducts, total, setTotal }
                 </ul>
 
                 {/* Action Button */}
-                <button type='button' onClick={() => selectProduct() } className="btn btn-primary w-full rounded-3xl bg-[#7C3AED] hover:bg-[#6D28D9] border-none text-white normal-case text-xl h-16">Buy Now</button>
+                <button type='button' onClick={() => selectProduct() } className="btn btn-primary w-full rounded-3xl bg-[#7C3AED] hover:bg-[#6D28D9] border-none text-white normal-case text-xl h-16 mt-auto">Buy Now</button>
             </div>
     );
 };
