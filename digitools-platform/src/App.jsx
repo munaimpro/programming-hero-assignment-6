@@ -15,9 +15,9 @@ const fetchProducts = async () => {
   return response.json();
 }
 
+const productPromise = fetchProducts();
+
 function App() {
-  
-  const productPromise = fetchProducts();
 
   const [cartProducts, setCartProducts] = useState([]);
 

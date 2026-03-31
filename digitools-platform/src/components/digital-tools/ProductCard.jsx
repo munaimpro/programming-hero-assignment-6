@@ -62,9 +62,7 @@ const ProductCard = ({ product, cartProducts, setCartProducts, total, setTotal }
                 </ul>
 
                 {/* Action Button */}
-            <button onClick={() => selectProduct() } className="btn btn-primary w-full rounded-3xl bg-[#7C3AED] hover:bg-[#6D28D9] border-none text-white normal-case text-xl h-16">
-                    Buy Now
-                </button>
+                <button type='button' onClick={() => selectProduct() } className="btn btn-primary w-full rounded-3xl bg-[#7C3AED] hover:bg-[#6D28D9] border-none text-white normal-case text-xl h-16">Buy Now</button>
             </div>
     );
 };
