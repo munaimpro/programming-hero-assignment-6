@@ -1,4 +1,4 @@
-# 🚀 AI Digital Tools Store
+# 🚀 DigiTools Platform
 
 A modern **Digital Tools Buying Website** built with React.
 
