@@ -1,18 +1,21 @@
 import React from 'react';
+import { toast } from 'react-toastify';
 
 const DigitalToolsCartProducts = ({ cartProducts, setCartProducts, total, setTotal }) => {
 
     // Function to handle product delete from cart
     const deleteCartProduct = (cartProduct) => {
-        const filteredProducts = cartProducts.filter(filteredProduct => filteredProduct.name !== cartProduct.name);
+        const filteredProducts = cartProducts.filter(filteredProduct => filteredProduct.id !== cartProduct.id);
         setCartProducts(filteredProducts);
-        setTotal(total - cartProduct.price)
+        setTotal(total - cartProduct.price);
+        toast.danger("Product removed");
     }
 
     // Function to handle checkout
     const handleCheckoutProduct = () => {
         setCartProducts([]);
         setTotal(0);
+        toast.success("Checkout successful")
     }
 
     return (

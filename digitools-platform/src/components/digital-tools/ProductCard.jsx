@@ -8,8 +8,8 @@ const ProductCard = ({ product, cartProducts, setCartProducts, total, setTotal }
     // Select product functionality
     const selectProduct = () => {
         setCartProducts([...cartProducts, product])
-        toast(`${product.name} added to cart`)
         setTotal(total + product.price)
+        toast.success(`${product.name} added to cart`)
     }
     
     return (

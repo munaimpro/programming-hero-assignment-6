@@ -1,6 +1,6 @@
 import React from 'react';
 
-const DigitalToolsProducts = () => {
+const PricingOptions = () => {
     return (
         <div className='grid grid-cols-1 lg:grid-cols-3 gap-4'>
             {/* starter price */}
@@ -169,4 +169,4 @@ const DigitalToolsProducts = () => {
     );
 };
 
-export default DigitalToolsProducts;
+export default PricingOptions;

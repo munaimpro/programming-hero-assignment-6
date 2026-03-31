@@ -31,6 +31,21 @@
     },
     {
         "id": 3,
+        "name": "AI Presentation Maker",
+        "description": "Generate beautiful presentations instantly with AI-powered slide design and layouts.",
+        "price": 25,
+        "period": "Mo",
+        "tag": "new",
+        "tagType": "new",
+        "features": [
+            "AI slide generation",
+            "500+ slide templates",
+            "Export to PowerPoint & PDF"
+        ],
+        "icon": "https://i.ibb.co.com/v1f2tQJ/presentation.png"
+    },
+    {
+        "id": 4,
         "name": "Premium Stock Assets",
         "description": "Access millions of royalty-free photos, videos, and graphics for your projects.",
         "price": 19,
@@ -45,7 +60,7 @@
         "icon": "https://i.ibb.co.com/3mzg3k4V/portfolio.png"
     },
     {
-        "id": 4,
+        "id": 5,
         "name": "Automation Toolkit",
         "description": "Automate repetitive tasks and streamline your workflow with powerful tools.",
         "price": 79,
@@ -60,7 +75,22 @@
         "icon": "https://i.ibb.co.com/dygTKZy/design-tool.png"
     },
     {
-        "id": 5,
+        "id": 6,
+        "name": "Video Editing Suite",
+        "description": "Create professional videos for YouTube, marketing, and social media with powerful editing tools.",
+        "price": 35,
+        "period": "Mo",
+        "tag": "best seller",
+        "tagType": "best seller",
+        "features": [
+            "4K video export",
+            "100+ transition effects",
+            "Audio enhancement tools"
+        ],
+        "icon": "https://i.ibb.co.com/zP0XJQH/video-editing.png"
+    },
+    {
+        "id": 7,
         "name": "Resume Builder Pro",
         "description": "Create professional resumes and cover letters that land interviews.",
         "price": 15,
@@ -75,7 +105,22 @@
         "icon": "https://i.ibb.co.com/MDNR4HkP/operation.png"
     },
     {
-        "id": 6,
+        "id": 8,
+        "name": "Website Builder Kit",
+        "description": "Build stunning websites quickly using ready-made components and drag-and-drop tools.",
+        "price": 59,
+        "period": "One-Time",
+        "tag": "popular",
+        "tagType": "popular",
+        "features": [
+            "300+ website blocks",
+            "Drag & drop builder",
+            "SEO optimized templates"
+        ],
+        "icon": "https://i.ibb.co.com/V0X8Yy5/web-design.png"
+    },
+    {
+        "id": 9,
         "name": "Social Media Content Kit",
         "description": "Complete toolkit for creating engaging social media content across all platforms.",
         "price": 39,
