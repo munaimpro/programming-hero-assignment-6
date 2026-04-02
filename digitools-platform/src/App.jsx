@@ -9,6 +9,7 @@ import Pricing from './components/pricing/Pricing'
 import Footer from './components/footer/Footer'
 import DigitalToolsCartProducts from './components/digital-tools/DigitalToolsCartProducts'
 import { ToastContainer } from 'react-toastify'
+import Cta from './components/cta/Cta'
 
 const fetchProducts = async () => {
   const response = await fetch('/products.json');
@@ -22,7 +23,7 @@ function App() {
   const [cartProducts, setCartProducts] = useState([]);
 
   return (
-    <>
+    <div className='no-select'>
       <NavBar cartProducts={cartProducts}></NavBar>
       <Banner></Banner>
       <Stats></Stats>
@@ -31,11 +32,12 @@ function App() {
       </Suspense>
       <GetStarted></GetStarted>
       <Pricing></Pricing>
+      <Cta></Cta>
       <Footer></Footer>
 
       {/* React Toastify */}
       <ToastContainer></ToastContainer>
-    </>
+    </div>
   )
 }
 
